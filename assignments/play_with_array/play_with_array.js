@@ -24,10 +24,8 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
-   function muln(num){
-       return num*n
-   }
-   arr=arr.map(muln)
+ 
+    arr.forEach((el, i, a) => a[i] = el * n)
   return arr
 }
 
